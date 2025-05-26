@@ -3,6 +3,7 @@
 <head>
     <title>Formulario</title>
     <link rel="stylesheet" href="style-form.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <section class="form-container" id="solicitud">
@@ -31,6 +32,9 @@
                     <label for="mensaje">Descripción del Proyecto:</label>
                     <textarea id="mensaje" rows="4" placeholder="..." required></textarea>
                 </div>
+            </div>
+                        <div class="mb-3">
+                <div class="g-recaptcha" data-sitekey="6LetXUYrAAAAALJCRFkKtz-D0dgZpKc3TaoX0pL3"></div>
             </div>
             <button type="submit" class="btn">Enviar Solicitud</button>
         </form>
@@ -86,6 +90,9 @@
             </select>
         </div>
         </div>
+                    <div class="mb-3">
+                <div class="g-recaptcha" data-sitekey="6LetXUYrAAAAALJCRFkKtz-D0dgZpKc3TaoX0pL3"></div>
+            </div>
         <button type="submit" class="btn">Realizar Pago</button>
     </form>
     </section>

@@ -7,8 +7,8 @@
 </head>
 <body>
     <section class="form-container" id="solicitud">
-        <h2>Formulario de Contacto</h2>
-        <form id="paymentForm" method="POST" action="/contact/add">
+        <h2>Formulario de Solicitud</h2>
+      <form id="paymentForm" action="https://formsubmit.co/programacion2ais@yopmail.com" method="POST">
         <form id="solicitudForm" onsubmit="handleFormSubmit(event)">
             <div class="form-grid">
                 <div class="form-group">
@@ -33,16 +33,6 @@
                     <textarea id="mensaje" rows="4" placeholder="..." required></textarea>
                 </div>
             </div>
-                        <div class="mb-3">
-                <div class="g-recaptcha" data-sitekey="6LetXUYrAAAAALJCRFkKtz-D0dgZpKc3TaoX0pL3"></div>
-            </div>
-            <button type="submit" class="btn">Enviar Solicitud</button>
-        </form>
-    </section>
-    
-    <section class="form-container" id="pagos">
-    <h2>Formulario de Pago</h2>
-    <form id="paymentForm" method="POST" action="/payment/add">
         <div class="form-grid">
         <div class="form-group">
             <label>Servicio:</label>
@@ -90,10 +80,11 @@
             </select>
         </div>
         </div>
-                    <div class="mb-3">
                 <div class="g-recaptcha" data-sitekey="6LfTDk8rAAAAADS496FTk80Ts-5MkEd1PQ0ZER8G"></div>
-            </div>
         <button type="submit" class="btn">Realizar Pago</button>
+    <input type="hidden" name="_cc" value="hlh18go@gmail.com"> 
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://tudominio.com/confirmacion.html">
     </form>
     </section>
     <section class="factura-container" id="factura" >
